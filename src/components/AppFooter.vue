@@ -120,7 +120,7 @@ export default {
 
             div.second-block{
                 display: flex;
-
+                
                 div#dc{
                     padding-right: 3rem;
                 }
