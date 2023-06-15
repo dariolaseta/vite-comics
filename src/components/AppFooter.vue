@@ -54,6 +54,10 @@
                     </div>
     
                 </div>
+
+                <div class="logo">
+                    <img src="../assets/img/dc-logo-bg.png" alt="dc logo">
+                </div>
         </nav>
 
         <div class="bottom-footer">
@@ -63,11 +67,11 @@
                 <div class="socials">
                     <ul>
                         <li><a href="#">FOLLOW US</a></li>
-                        <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="social img"></a></li>
-                        <li><a href="#"><img src="../assets/img/footer-twitter.png" alt="social img"></a></li>
-                        <li><a href="#"><img src="../assets/img/footer-youtube.png" alt="social img"></a></li>
-                        <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt="social img"></a></li>
-                        <li><a href="#"><img src="../assets/img/footer-periscope.png" alt="social img"></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="facebook logo"></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-twitter.png" alt="twitter logo"></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-youtube.png" alt="youtube logo"></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt="pinterest logo"></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-periscope.png" alt="periscope logo"></a></li>
                     </ul>
                 </div>
             </div>
@@ -121,6 +125,14 @@ export default {
                     padding-right: 3rem;
                 }
             }
+
+            div.logo{
+                img{
+                    position: relative;
+                    top: -60px;
+                    left: 300px;
+                }
+            }
         }
 
         div.bottom-footer{
@@ -155,7 +167,6 @@ export default {
                     }
                 }
             }
-
         }
 
         div.bottom-bar{
