@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <nav class="container margin-auto">
+        <nav class="container">
                 <div class="first-block">
                     <div id="dc-comics">
                         <h2>DC COMICS</h2>
@@ -25,7 +25,6 @@
                 </div>
     
                 <div class="second-block">
-    
                     <div id="dc">
                         <h2>DC</h2>
                         <ul>
@@ -56,6 +55,25 @@
     
                 </div>
         </nav>
+
+        <div class="bottom-footer">
+            <div class="container">
+                <button>SIGN-UP NOW!</button>
+
+                <div class="socials">
+                    <ul>
+                        <li><a href="#">FOLLOW US</a></li>
+                        <li><a href="#"><img src="../assets/img/footer-facebook.png" alt="social img"></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-twitter.png" alt="social img"></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-youtube.png" alt="social img"></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-pinterest.png" alt="social img"></a></li>
+                        <li><a href="#"><img src="../assets/img/footer-periscope.png" alt="social img"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-bar"></div>
     </footer>
 </template>
 
@@ -68,16 +86,15 @@ export default {
 <style lang="scss" scoped>
     @use '../styles/partials/mixins' as *;
     @use '../styles/partials/variables' as *;
-    
+
     footer{
         background-image: url("../assets/img/footer-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
 
-        @include flex();
         nav.container{
             display: flex;
-            margin-top: 2rem;
+            padding: 2rem 0;
             height: 100%;
 
             ul{
@@ -91,6 +108,10 @@ export default {
 
             div.first-block{
                 padding-right: 3rem;
+
+                div#shop{
+                    padding-bottom: 1rem;
+                }
             }
 
             div.second-block{
@@ -100,6 +121,46 @@ export default {
                     padding-right: 3rem;
                 }
             }
+        }
+
+        div.bottom-footer{
+            background-color: #303030;
+
+            div.container{
+
+                @include flex(row, space-between, center);
+
+                button{
+                    background: none;
+                    border: 2px solid $blue;
+                    padding: 1rem 1.5rem;
+                    color: white;
+                    font-size: 1rem;
+                    cursor: pointer;
+                }
+
+                div.socials{
+                    ul{
+                        display: flex;
+                        align-items: center;
+
+                        li{
+                            padding-left: 1rem;
+                        }
+                    }
+
+                    a{
+                        color: $blue;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+        }
+
+        div.bottom-bar{
+            height: 50px;
+            background-color: $black;
         }
     }
 </style>
