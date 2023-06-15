@@ -11,5 +11,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    
-</style>@import "../styles/general.scss";
+@import "../styles/general.scss";
+</style>
