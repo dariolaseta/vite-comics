@@ -7,7 +7,21 @@
 }
 
 .container{
+    max-width: 1170px;
+    width: 70%;
+    margin: 0 auto;
     height: 200px;
-    background-color: #1c1c1c;
+}
+
+.margin-auto{
+    margin: 0 auto;
+}
+
+h1,
+h2{
     color: white;
+}
+
+ul{
+    list-style-type: none;
 }

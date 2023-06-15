@@ -1,11 +1,11 @@
 <template>
     <header>
         <div class="header-container">
-            <div class="logo">
+            <div class="logo margin-auto">
 
             </div>
     
-            <nav>
+            <nav class="margin-auto">
     
             </nav>
         </div>
@@ -21,13 +21,11 @@ export default {
 <style lang="scss" scoped>
     @use '../styles/partials/mixins' as *;
     @use '../styles/partials/variables' as *;
-    @import "../styles/general.scss";
 
     header{
         div.header-container{
 
             @include flex(row, space-between, center);
-            width: 50%;
             margin: 0 auto;
         }
 

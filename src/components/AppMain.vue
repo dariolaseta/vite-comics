@@ -1,7 +1,9 @@
 <template>
-    <div class="container">
-        <h1>--&gtContent goes here &lt--</h1>
-    </div>
+    <main>
+        <div class="container">
+            <h1 class="margin-auto">--&gtContent goes here &lt--</h1>
+        </div>
+    </main>
 </template>
 
 <script>
@@ -13,14 +15,15 @@ export default {
 <style lang="scss" scoped>
     @use '../styles/partials/mixins' as *;
     @use '../styles/partials/variables' as *;
-    @import "../styles/general.scss";
 
-    div.container{
-        @include flex();
-
-        h1{
-            margin: 0 auto;
-            width: 50%;
+    main{
+        background-color: $black;
+        div.container{
+            @include flex();
+    
+            h1{
+                width: 100%;
+            }
         }
     }
 

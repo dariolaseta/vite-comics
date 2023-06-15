@@ -19,6 +19,6 @@ export default{
   <AppFooter />
 </template>
 
-<style lang="scss" scoped>
-@import "./styles/general.scss";
+<style lang="scss">
+  @import "./styles/general.scss";
 </style>
