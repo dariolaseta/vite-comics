@@ -1,6 +1,6 @@
 <template>
     <header>
-        <div class="container">
+        <div class="header-container">
             <div class="logo">
 
             </div>
@@ -24,7 +24,7 @@ export default {
     @import "../styles/general.scss";
 
     header{
-        div.container{
+        div.header-container{
 
             @include flex(row, space-between, center);
             width: 50%;
