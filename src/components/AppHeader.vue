@@ -1,11 +1,11 @@
 <template>
     <header>
-        <div class="header-container">
-            <div class="logo margin-auto">
+        <div class="container">
+            <div class="logo">
 
             </div>
     
-            <nav class="margin-auto">
+            <nav>
     
             </nav>
         </div>
@@ -23,10 +23,11 @@ export default {
     @use '../styles/partials/variables' as *;
 
     header{
-        div.header-container{
-
-            @include flex(row, space-between, center);
-            margin: 0 auto;
+        div.container{
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem auto;
+            height: 100%;
         }
 
         div.logo{
