@@ -1,6 +1,7 @@
 <template>
     <main>
         <div class="container">
+            <button class="top-button">CURRENT SERIES</button>
             <div class="card" v-for="(item, index) in cards">
                 <img :src="cards[index].thumb" :alt="cards[index].series">
                 <p>{{ cards[index].series }}</p>
@@ -103,11 +104,24 @@ export default {
         div.container{
             @include flex();
             flex-wrap: wrap;
+            position: relative;
 
             height: 100%;
     
             h1{
                 width: 100%;
+            }
+
+            button.top-button{
+                padding: 1rem 2rem;
+                background-color: $blue;
+                border: none;
+                font-size: 1rem;
+                color: white;
+
+                position: absolute;
+                top: -1.5rem;
+                left: 0;
             }
         }
     }
