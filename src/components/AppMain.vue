@@ -1,12 +1,16 @@
 <template>
     <main>
         <div class="container">
-            <h1 class="margin-auto">--&gtContent goes here &lt--</h1>
+            <div class="card" v-for="(item, index) in cards">
+                <img :src="cards[index].thumb" :alt="cards[index].series">
+                <p>{{ cards[index].series }}</p>
+            </div>
         </div>
     </main>
 </template>
 
 <script>
+
 export default {
     name: "AppMain",
     data(){
@@ -98,10 +102,29 @@ export default {
         background-color: $black;
         div.container{
             @include flex();
+            flex-wrap: wrap;
+
+            height: 100%;
     
             h1{
                 width: 100%;
             }
+        }
+    }
+
+    div.card{
+            width: calc(100% / 6);
+            height: calc(100% / 6);
+        img{
+            width: 150px;
+            height: 150px;
+            margin-top: 3rem;
+            object-fit: cover;
+        }
+
+        p{
+            color: white;
+            margin-top: 1rem;
         }
     }
 
