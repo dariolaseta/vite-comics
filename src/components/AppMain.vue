@@ -2,10 +2,13 @@
     <main>
         <div class="container">
             <button class="top-button">CURRENT SERIES</button>
+
             <div class="card" v-for="(item, index) in cards">
                 <img :src="cards[index].thumb" :alt="cards[index].series">
                 <p>{{ cards[index].series }}</p>
             </div>
+
+            <button class="load-more">LOAD MORE</button>
         </div>
     </main>
 </template>
@@ -112,16 +115,22 @@ export default {
                 width: 100%;
             }
 
-            button.top-button{
-                padding: 1rem 2rem;
+            button{
+                padding: 1rem 3rem;
                 background-color: $blue;
                 border: none;
                 font-size: 1rem;
                 color: white;
-
+            }
+            button.top-button{
                 position: absolute;
                 top: -1.5rem;
-                left: 0;
+                left: -2rem;
+            }
+            
+            button.load-more{
+                padding: .5rem 4rem;
+                margin: 2rem 0 1.4rem;
             }
         }
     }
