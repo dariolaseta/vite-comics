@@ -5,21 +5,18 @@
                     <div id="dc-comics">
                         <h2>DC COMICS</h2>
                         <ul>
-                            <li><a href="#">Characters</a></li>
-                            <li><a href="#">Comics</a></li>
-                            <li><a href="#">Movies</a></li>
-                            <li><a href="#">TV</a></li>
-                            <li><a href="#">Games</a></li>
-                            <li><a href="#">Videos</a></li>
-                            <li><a href="#">News</a></li>
+                            <li v-for="item in dcComics">
+                                <a href="#">{{item}}</a>
+                            </li>
                         </ul>
                     </div>
         
                     <div id="shop">
                         <h2>SHOP</h2>
                         <ul>
-                            <li><a href="#">Shop DC</a></li>
-                            <li><a href="#">Shop DC Collectibles</a></li>
+                            <li v-for="item in shops">
+                                <a href="#">{{item}}</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -28,28 +25,18 @@
                     <div id="dc">
                         <h2>DC</h2>
                         <ul>
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Privacy policy (New)</a></li>
-                            <li><a href="#">Ad Choices</a></li>
-                            <li><a href="#">Advertising</a></li>
-                            <li><a href="#">Jobs</a></li>
-                            <li><a href="#">Subscriptions</a></li>
-                            <li><a href="#">Talent Workshops</a></li>
-                            <li><a href="#">CPSC Certificates</a></li>
-                            <li><a href="#">Ratings</a></li>
-                            <li><a href="#">Shop Help</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li v-for="item in dc">
+                                <a href="#">{{item}}</a>
+                            </li>
                         </ul>
                     </div>
         
                     <div id="sites">
                         <h2>SITES</h2>
                         <ul>
-                            <li><a href="#">DC</a></li>
-                            <li><a href="#">MAD Magazine</a></li>
-                            <li><a href="#">DC Kids</a></li>
-                            <li><a href="#">DC Universe</a></li>
-                            <li><a href="#">DC Power Visa</a></li>
+                            <li v-for="item in sites">
+                                <a href="#">{{item}}</a>
+                            </li>
                         </ul>
                     </div>
     
@@ -84,6 +71,43 @@
 <script>
 export default {
     name: "AppFooter",
+    data() {
+        return {
+            dcComics: [
+                "Characters",
+                "Comics",
+                "Movies",
+                "TV",
+                "Games",
+                "Videos",
+                "News"
+            ],
+            shops: [
+                "Shop DC",
+                "Shop DC Collectibles"
+            ],
+            dc: [
+                "Terme of Use",
+                "Privacy Policy (New)",
+                "Ad Choices",
+                "Advertising",
+                "Jobs",
+                "Subscriptions",
+                "Talent Workshop",
+                "CPCS Certificates",
+                "Ratings",
+                "Shop Help",
+                "Contact us"
+            ],
+            sites: [
+                "DC",
+                "MAD Magazine",
+                "DC Kids",
+                "DC Universe",
+                "DC Power Visa"
+            ],
+        }
+    }
 }
 </script>
 
