@@ -131,6 +131,7 @@ export default {
             button.load-more{
                 padding: .5rem 4rem;
                 margin: 2rem 0 1.4rem;
+                cursor: pointer;
             }
         }
     }
@@ -139,10 +140,11 @@ export default {
             width: calc(100% / 6);
             height: calc(100% / 6);
         img{
-            width: 150px;
-            height: 150px;
+            width: 165px;
+            height: 165px;
             margin-top: 3rem;
             object-fit: cover;
+            object-position: 0 .3rem;
         }
 
         p{
